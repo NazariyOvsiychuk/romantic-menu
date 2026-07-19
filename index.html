@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f1e8">
+    <title>An Evening for Nastia</title>
+    <link rel="icon" href="assets/petal-pattern.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar" aria-label="Private dining header">
+        <a class="brand" href="#top" aria-label="An Evening for Nastia">
+          <span class="brand-mark">N</span>
+          <span>
+            <span class="brand-name">Maison Nazar</span>
+            <span class="brand-caption">private dining</span>
+          </span>
+        </a>
+
+        <button class="icon-button" type="button" data-open-bill aria-label="Відкрити рахунок">
+          <span aria-hidden="true">✓</span>
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="eyebrow">table 01 · reserved for Nastia</p>
+            <h1 id="page-title">An Evening for Nastia</h1>
+            <p class="lead">
+              Ресторанна вечеря вдома, де кожна страва має пару: келих, погляд і
+              маленьку причину усміхнутися.
+            </p>
+          </div>
+
+          <aside class="reservation-panel" aria-label="Reservation details">
+            <div>
+              <span class="panel-label">guest</span>
+              <strong>Настя</strong>
+            </div>
+            <div>
+              <span class="panel-label">host</span>
+              <strong>Назар</strong>
+            </div>
+            <div>
+              <span class="panel-label">dress code</span>
+              <strong>усмішка</strong>
+            </div>
+          </aside>
+        </section>
+
+        <nav class="course-tabs" aria-label="Меню">
+          <button class="course-tab is-active" type="button" data-filter="all">Усе</button>
+          <button class="course-tab" type="button" data-filter="drink">Drinks</button>
+          <button class="course-tab" type="button" data-filter="starter">Starters</button>
+          <button class="course-tab" type="button" data-filter="salad">Salads</button>
+          <button class="course-tab" type="button" data-filter="main">Main</button>
+          <button class="course-tab" type="button" data-filter="signature">Special</button>
+        </nav>
+
+        <section class="menu-grid" aria-label="Dinner menu">
+          <article class="menu-card accent-rose" data-course="drink">
+            <div class="card-kicker">welcome drink</div>
+            <div class="card-head">
+              <h2>Bellini</h2>
+              <button class="choose-button" type="button" data-choice="Bellini">Обрати</button>
+            </div>
+            <p>Просеко · полуниця</p>
+            <span class="pairing">pairing: перший тост за цей вечір</span>
+          </article>
+
+          <article class="menu-card accent-mint" data-course="drink">
+            <div class="card-kicker">welcome drink</div>
+            <div class="card-head">
+              <h2>Sparkling Citrus</h2>
+              <button class="choose-button" type="button" data-choice="Sparkling Citrus">Обрати</button>
+            </div>
+            <p>Ігристе · лайм · м'ята</p>
+            <span class="pairing">pairing: легкий старт і музика тихіше</span>
+          </article>
+
+          <article class="menu-card accent-salmon" data-course="starter">
+            <div class="card-kicker">starter</div>
+            <div class="card-head">
+              <h2>Bruschetta au Saumon</h2>
+              <button class="choose-button" type="button" data-choice="Bruschetta au Saumon">Обрати</button>
+            </div>
+            <p>Хрусткий багет · крем-сир · слабосолона сьомга · лимон · зелень</p>
+            <span class="pairing">pairing: комплімент від шефа перед подачею</span>
+          </article>
+
+          <article class="menu-card accent-basil" data-course="starter">
+            <div class="card-kicker">starter</div>
+            <div class="card-head">
+              <h2>Caprese</h2>
+              <button class="choose-button" type="button" data-choice="Caprese">Обрати</button>
+            </div>
+            <p>Моцарела · томати · базилік · бальзамічний крем</p>
+            <span class="pairing">pairing: щось просте, свіже і красиве</span>
+          </article>
+
+          <article class="menu-card accent-olive" data-course="salad">
+            <div class="card-kicker">salad</div>
+            <div class="card-head">
+              <h2>Mediterranean</h2>
+              <button class="choose-button" type="button" data-choice="Mediterranean">Обрати</button>
+            </div>
+            <p>Рукола · чері · моцарела · пармезан · бальзамічний крем</p>
+            <span class="pairing">pairing: келих і розмова без телефону</span>
+          </article>
+
+          <article class="menu-card accent-gold" data-course="salad">
+            <div class="card-kicker">salad</div>
+            <div class="card-head">
+              <h2>Caesar</h2>
+              <button class="choose-button" type="button" data-choice="Caesar">Обрати</button>
+            </div>
+            <p>Куряче філе · салат Ромен · пармезан · сухарики · соус Цезар</p>
+            <span class="pairing">pairing: класика, яка не сперечається з вечором</span>
+          </article>
+
+          <article class="menu-card accent-cream" data-course="main">
+            <div class="card-kicker">main course</div>
+            <div class="card-head">
+              <h2>Chicken Supreme</h2>
+              <button class="choose-button" type="button" data-choice="Chicken Supreme">Обрати</button>
+            </div>
+            <p>Куряче філе у вершковому соусі з пармезаном.</p>
+            <span class="pairing">pairing: ніжний смак і трошки більше пармезану</span>
+          </article>
+
+          <article class="menu-card accent-blue" data-course="main">
+            <div class="card-kicker">main course</div>
+            <div class="card-head">
+              <h2>Salmon</h2>
+              <button class="choose-button" type="button" data-choice="Salmon">Обрати</button>
+            </div>
+            <p>Запечений лосось із лимоном та вершковим соусом.</p>
+            <span class="pairing">pairing: лимон, вершки і дуже спокійний темп</span>
+          </article>
+
+          <article class="menu-card signature-card" data-course="signature">
+            <div class="card-kicker">signature dish</div>
+            <div class="card-head">
+              <h2>Наша традиція</h2>
+              <button class="choose-button" type="button" data-choice="Наша традиція">Обрати</button>
+            </div>
+            <p>
+              Молода картопля з вершковим маслом, ніжне філе оселедця, квашений
+              огірок, маринована червона цибуля та кріп.
+            </p>
+            <span class="pairing">
+              Поза класичним меню. Готується лише для особливих гостей.
+            </span>
+          </article>
+        </section>
+
+        <section class="moments" aria-labelledby="moments-title">
+          <div class="section-title">
+            <p class="eyebrow">romantic add-ons</p>
+            <h2 id="moments-title">Маленькі штучки для Насті</h2>
+          </div>
+
+          <div class="moment-list">
+            <button class="moment-tile" type="button" data-note="Настя, ця вечеря задумана не заради страв, а заради твого усміху.">
+              <span>Compliment from the chef</span>
+              <strong>Подається перед першою стравою</strong>
+            </button>
+            <button class="moment-tile" type="button" data-note="Love verification пройдено. Настя обирає наступну пісню, а Назар приносить ще один келих.">
+              <span>Love verification</span>
+              <strong>Один поцілунок відкриває пісню на вибір</strong>
+            </button>
+            <button class="moment-tile" type="button" data-note="Фінальний курс: три хвилини slow dance після вечері. Повтор дозволений без обмежень.">
+              <span>Final course</span>
+              <strong>Slow dance без телефонів</strong>
+            </button>
+            <button class="moment-tile" type="button" data-note="Офіціант Назар отримав виклик. Очікування: 7 секунд, подача: комплімент і щось смачне.">
+              <span>Service bell</span>
+              <strong>Викликати Назара-офіціанта</strong>
+            </button>
+            <button class="moment-tile" type="button" data-random-note>
+              <span>Chef roulette</span>
+              <strong>Випадкова романтична місія</strong>
+            </button>
+            <button class="moment-tile" type="button" data-note="Фото рахунку дозволене тільки якщо в кадрі є Настя, келих і доказ, що вечір вдався.">
+              <span>Receipt photo</span>
+              <strong>Маленький доказ красивого вечора</strong>
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <div class="floating-checkout" aria-live="polite">
+        <div>
+          <span>Вибір вечора</span>
+          <strong data-selection-count>0 позицій</strong>
+          <em data-selection-cost>вартість: бронь</em>
+        </div>
+        <button class="checkout-button" type="button" data-open-bill>Сплатити рахунок</button>
+      </div>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite" aria-hidden="true"></div>
+
+    <dialog class="bill-dialog" aria-labelledby="bill-title">
+      <button class="dialog-close" type="button" data-close-bill aria-label="Закрити">×</button>
+      <p class="eyebrow">digital bill</p>
+      <h2 id="bill-title">Рахунок для table 01</h2>
+      <div class="bill-lines" data-bill-lines>
+        <p>Поки що вибір порожній. Але вечір уже заброньований.</p>
+      </div>
+      <div class="bill-total">
+        <span>До сплати</span>
+        <strong data-bill-total>Бронь вечора вже активна</strong>
+        <p data-bill-note>Обери кілька позицій, і рахунок стане цікавішим.</p>
+      </div>
+      <div class="tip-box" aria-label="Чайові">
+        <span>Чайові офіціанту</span>
+        <div class="tip-options">
+          <button class="tip-button is-active" type="button" data-tip="обійми">Обійми</button>
+          <button class="tip-button" type="button" data-tip="поцілунок">Поцілунок</button>
+          <button class="tip-button" type="button" data-tip="slow dance">Slow dance</button>
+        </div>
+      </div>
+      <button class="pay-button" type="button" data-pay>Оплатити увагою</button>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
